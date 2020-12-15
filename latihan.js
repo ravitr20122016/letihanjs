@@ -1,3 +1,4 @@
+const chalk = require('chalk');
 const etl = {
 easy: '1',
 to: '2',
@@ -8,7 +9,11 @@ a:'s'
 const objectArray = Object.entries(etl);
   
   objectArray.forEach(([key, value]) => {
-    console.log(key +" : " +value); // 'one'
+    console.log(chalk.green(key +" : " +value)); 
     
   });
+
+  console.log(chalk.green("\nJUMLAH KEY ADALAH = "+objectArray.length+"\n"));    
+  
+
 
